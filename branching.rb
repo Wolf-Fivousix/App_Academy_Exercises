@@ -8,3 +8,7 @@
 # ====================
 # We have resolved the conflict and decided that both things are important!
 # Therefore we are keeping both changes!
+
+# This is an extra comment after the Merge Conflict was fixed! What happens?
+# We had to resolve conflict, again! The beggining of the fine was equal,
+#but the added comment created a new conflict to be resolved!
