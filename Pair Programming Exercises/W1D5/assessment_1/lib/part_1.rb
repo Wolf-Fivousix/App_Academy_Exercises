@@ -16,7 +16,6 @@ end
 
 def prime_range(min, max)
     primes = []
-    return primes if min > max
     (min..max).each {|number| primes << number if is_prime?(number)}
     primes
 end
