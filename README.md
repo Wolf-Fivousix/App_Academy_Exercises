@@ -1,4 +1,4 @@
-###### What is This?
+# What is This?
 
 This is my App Academy Repository. Here you will find projects and exercises done during the program.
 Feel free to ask questions.
