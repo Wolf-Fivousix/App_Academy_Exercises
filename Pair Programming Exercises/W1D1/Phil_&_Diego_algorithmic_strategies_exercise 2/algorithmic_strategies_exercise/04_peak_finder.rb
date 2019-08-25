@@ -6,9 +6,7 @@
 def peak_finder(arr)
     results = []
     results << arr[0] if arr[0] > arr[1]
-    (1...arr.length-1).each do |index|
-        results << arr[index] if arr[index] > arr[index - 1] && arr[index] > arr[index+1]
-    end
+    (1...arr.length-1).each {|index| results << arr[index] if arr[index] > arr[index - 1] && arr[index] > arr[index+1]}
     results << arr[-1] if arr[-1] > arr[-2]
     results
 end

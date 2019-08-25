@@ -4,9 +4,10 @@
 
 def only_vowels?(str)
     vowels = "aeiou"
+    # Revision update
+    # str.each_char.all? {|char| vowels.include?(char)}
     str.each_char {|char| return false if vowels.include?(char) == false}
     true
-
 end
 
 p only_vowels?("aaoeee")  # => true

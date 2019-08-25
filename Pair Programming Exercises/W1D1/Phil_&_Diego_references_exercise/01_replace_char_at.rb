@@ -11,16 +11,6 @@ def replace_char_at!(str, char, idx)
     str
 end
 
-# We got booted back to main loby. =(
-# Thanks for the time and patience, Phil! =D
-#Hahahaha
-#thanks for all the help!!
-#I LEARNED ALOT!!
-
-#you were awesome <3!
-
-#Thank you! Appreciate it! You were g
-
 str_1 = "hello"
 p str_1.object_id                       # => 70120944788380
 result_1 = replace_char_at!(str_1, "j", 0)
