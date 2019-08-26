@@ -9,3 +9,16 @@ Feel free to ask questions.
 - App Academy Full Stack Free Program: https://open.appacademy.io
 - Free Code Camp Full Stack Program: https://www.freecodecamp.org
 - Traversy Media Youtube Channel: https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA
+
+# Future questions:
+- W4D4 Rspec:
+	- What is "Self" doing here?
+	- Why are we calling a function in the end of the spec and not inside the expect()?
+		1. Example (W1D2 rspec_exercise_2 01_part_2_spec.rb):
+		    - it "should call your previous 'substrings' method" do
+		      - allow(self).to receive(:substrings).and_return(["a", "ab", "b"])
+		      - expect(self).to receive(:substrings).at_least(:once)
+		      - palindrome_substrings("ab")
+		    - end
+- W4D5 CSS Advanced Selectors:
+	- Why use Pseudo Selectors instead of making a class? (When I don't want to make changes to my HTML? Example?)
