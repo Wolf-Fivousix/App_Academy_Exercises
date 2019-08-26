@@ -17,8 +17,9 @@ class Bootcamp
     def enroll(student)
         # Ternary Operator     ? : 
         #condition ? TRUE Do This : FALSE Do This
-        return false if @students.length >= @student_capacity
-        @students << student
+        # return false if @students.length >= @student_capacity
+        # @students << student
+        @students.length >= @student_capacity ? (return false) : @students << student
         true
     end
 
