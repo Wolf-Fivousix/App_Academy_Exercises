@@ -9,6 +9,7 @@ Feel free to ask questions.
 - App Academy Full Stack Free Program: https://open.appacademy.io
 - Free Code Camp Full Stack Program: https://www.freecodecamp.org
 - Traversy Media Youtube Channel: https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA
+- HTML 5 Blocks: http://html5doctor.com/downloads/h5d-sectioning-flowchart.png
 
 # Future questions:
 - W4D4 Rspec:
