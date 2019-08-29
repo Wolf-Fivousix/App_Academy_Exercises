@@ -11,6 +11,7 @@ Feel free to ask questions.
 - Traversy Media Youtube Channel: https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA
 - HTML 5 Blocks: http://html5doctor.com/downloads/h5d-sectioning-flowchart.png
 - CSS Selectors: https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+- Coding Ideas: https://www.freecodecamp.org/news/the-secret-to-unlimited-project-ideas/
 
 # Future questions:
 - W4D4 Rspec:
