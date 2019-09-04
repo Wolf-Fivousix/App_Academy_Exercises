@@ -66,19 +66,30 @@ class Game
 
     # compare guess to previous card 
     def compare
-        @previous_guess = self.prompt
+        puts "Make your first guess"
+        @previous_guess = self.prompt 
+        @board[@previous_guess].reveal
+        @board.render 
+        puts
+
+        puts "Guess a different position"  
         current_guess = self.prompt # call self.prompt twice. 
+        while (current_guess == @previous_guess)
+            puts "Guess a different position"
+            current_guess = self.prompt # call self.prompt twice. 
+        end
+        @board[current_guess].reveal
+        puts
 
         # If there has been a previous guess
         if current_guess == @previous_guess # if a pair
             puts "Congrats"
-            @board[current_guess].reveal
-            @previous_guess = [] 
+            # reveal the cards
             true
         else
-            @board[previous_guess].reveal
-            @previous_guess = current_guess
+            # Make the cards hidden, return false
             @board[current_guess].reveal
+            @board[@previous_guess].reveal
             false
         end
     end 
@@ -87,10 +98,13 @@ class Game
     def play_loop
         self.board_init 
         current_player = 0 
-        unless @board.won? 
+        until @board.won? 
             @board.render       # Show the board
+            puts
             @players[current_player] += 1 if self.compare     # Get a guess
-            current_player = (current_player + 1) % 2
+            current_player = (current_player + 1) % 2 
+            @board.render
+            puts
             # Compare the guess 
                 # If match, obtain their score?!? 
             # Else, switch player. 
@@ -98,6 +112,9 @@ class Game
     end
 
 end
- 
-We can have a method for current player,
-then switch. Just like in yesterday's ghost class
+
+# Always reveals cards, regardless of whether they matched or not. 
+# Also, prevent players from calling already revealed cards next time. 
+
+game = Game.new
+game.play_loop
