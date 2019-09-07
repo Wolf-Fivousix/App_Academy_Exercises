@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <meta name="description" content="Get fed naturally">
         <meta name="keywords" content="Wolf,Wolves,Meat,Picanha,Hunting">
-        <style></style>
+        <link href="style.css" rel="stylesheet" type="text/css"></link>
+        <script src="./script.js" type="text/javascript">
+        console.log("Script loaded!")
+        </script>
         <script>
             (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -109,14 +112,16 @@
             <form id="review-form" action="">
                 <label for="review">Review</label>
                 <input type="name" type="text" name="name">
-                <label for="rating">Rating</label>
+                <label for="rating" id="name">Rating</label>
                 1<input type="radio" name="rating" value="1">
                 2<input type="radio" name="rating" value="2">
                 3<input type="radio" name="rating" value="3">
                 4<input type="radio" name="rating" value="4">
                 5<input type="radio" name="rating" value="5">
                 <label for="dificulty">Hunt Dificulty</label>
-                <select name="dificulty" id="">
+                <!-- id = Expertise on the next line is due to the given javaScript to run properly.
+                Once I can write my own script, this should be changed to a clearer ID. -->
+                <select name="dificulty" id="expertise">
                     <option value="Select Dificulty" disabled="true" selected="true">Select Dificulty...</option>
                     <option value="Almost Died!">Almost Died!</option>
                     <option value="Hard">Hard</option>
