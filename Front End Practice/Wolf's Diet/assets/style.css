@@ -1,0 +1,77 @@
+body
+{
+    font-family: sans-serif;
+    background-color: rgb(247, 254, 255);
+}
+body h2
+{
+    font-size: 38px;
+}
+body h1
+{
+    font-size: 38px;
+}
+.ingredients-list li
+{
+    list-style: square inside;
+}
+section ol li:nth-child(odd)
+{
+    background: rgb(238, 238, 238);
+}
+
+ol
+{
+    list-style: upper-roman;
+}
+
+header > img
+{
+    width: 100px;
+}
+
+ul li a
+{
+    text-decoration: none;
+}
+
+input[type="radio"]
+{
+    -webkit-appearance: none;
+    width:27px;height:27px;
+    background-image:url(./stars.png);
+    vertical-align:bottom;
+}
+
+input[type="radio"]:hover
+{
+    /* The image scrolls downwards, not upwards like reading a page. */
+    background-position: 30px 60px;
+}
+
+input[type="radio"]:checked
+{
+    background-position: 30px 30px;
+}
+
+input[type="radio"],
+input[type="submit"],
+#expertise
+{
+    cursor: pointer;
+    outline: none;
+}
+
+form > input:last-child
+{
+    background: gold;
+}
+form > input:last-child:hover
+{
+    background: rgba(255, 217, 0, 0.425);
+}
+
+h2 + .user_review
+{
+    border-top: 1px solid black;
+}
