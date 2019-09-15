@@ -10,6 +10,7 @@ Feel free to ask questions.
 - Free Code Camp Full Stack Program: https://www.freecodecamp.org
 - Traversy Media Youtube Channel: https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA
 - HTML 5 Blocks: http://html5doctor.com/downloads/h5d-sectioning-flowchart.png
+- CSS Selectors References: https://www.w3schools.com/cssref/css_selectors.asp
 - CSS Selectors: https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
 - Coding Ideas: https://www.freecodecamp.org/news/the-secret-to-unlimited-project-ideas/
 - SQL Tutorial: https://sqlbolt.com/
