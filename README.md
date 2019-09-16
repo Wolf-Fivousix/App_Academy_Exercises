@@ -21,3 +21,6 @@ Feel free to ask questions.
 
 - W5D3 SQL:
 	- Is "CREATE INDEX Idx1 ON fruitsforsale(fruit);" a free-cost operation? Doesn't SQL have to scan the whole table first, in order to make that? If so, wouldn't be better to just "SELECT price FROM fruit WHERE fruit='Peach';" in the first place?
+
+- W5D5 Associations:
+	- Why making 2 tables (belong_to, has_many) improves efficiency? Don't we have to look-up a second table and fetch data, again? Doesn't retrieving everything at once more memory friendly?
