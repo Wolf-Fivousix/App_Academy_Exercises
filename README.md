@@ -16,5 +16,3 @@ Feel free to ask questions.
 - SQL Tutorial: https://sqlbolt.com/
 
 # Future questions:
-- W4D5 CSS Advanced Selectors:
-	- Why use Pseudo Selectors instead of making a class? (When I don't want to make changes to my HTML? Example?)
