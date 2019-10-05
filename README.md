@@ -16,4 +16,3 @@ Feel free to ask questions.
 - SQL Tutorial: https://sqlbolt.com/
 
 # Future questions:
-- When should I use a Link and when should I use a Button?
