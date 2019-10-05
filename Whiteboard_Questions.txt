@@ -28,3 +28,42 @@ def permutations(array)
 end
 
 p permutations(array) == array.permutation.to_a
+
+
+# Whiteboarding Problems for W7D5
+## Valid Parenthesis
+
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Note that an empty string is also considered valid.
+
+### Example 1:
+Input: "()"
+Output: true
+
+### Example 2:
+Input: "()[]{}"
+Output: true
+
+## Example 3:
+Input: "(]"
+Output: false
+
+### Example 4:
+Input: "([)]"
+Output: false
+
+### Example 5:
+Input: "{[]}"
+Output: true
+
+
+## Given a singly-linked list, determine if it has a cycle in it.
+
+A cycle means that in our linked-list, the `next` property points back to a previous node. Images are attached:
+(If you find a working solution)
+Can you solve it using O(1) (i.e. constant) space, if you haven't already?
