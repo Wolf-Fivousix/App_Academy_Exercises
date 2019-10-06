@@ -62,6 +62,7 @@ Input: "{[]}"
 Output: true
 
 
+
 ## Given a singly-linked list, determine if it has a cycle in it.
 
 A cycle means that in our linked-list, the `next` property points back to a previous node. Images are attached:
