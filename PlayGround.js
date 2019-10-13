@@ -1,3 +1,9 @@
+function outside (outer)
+{
+    outer += 10;
+    console.log(outer);
+}
+
 function anagrams() {
     let outer = 5;
     console.log(outer);
@@ -15,6 +21,19 @@ function anagrams() {
         console.log("Inside function: ", outer);
     };
     func();
+    console.log("------------------------ Outdefined function call")
+    outside(outer);
+    console.log("Yet, our local variable was not modified: ");
+    console.log(outer);
 }
 
-anagrams();
+// anagrams();
+references();
+
+function references ()
+{
+    let original = 10;
+    let copy = original;
+    copy++;
+    console.log(original, copy);
+}
