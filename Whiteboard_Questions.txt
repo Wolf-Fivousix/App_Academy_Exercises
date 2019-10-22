@@ -143,3 +143,30 @@ Output: [[1,2,4]]
 Example 2:
 Input: k = 3, n = 9
 Output: [[1,2,6], [1,3,5], [2,3,4]] 
+
+
+
+=============================================== W10D1
+Problem 1:
+Write a function
+tripleDouble(num1, num2)
+which takes numbers num1 and num2 and returns 1 if there is a straight triple of a number at any place in num1 and also a straight double of the same number in num2.
+If this isn't the case, return 0
+Examples
+tripleDouble(451999277, 41177722899) == 1
+# num1 has straight triple 999s and  num2 has straight double 99s
+tripleDouble(1222345, 12345) == 0
+# num1 has straight triple 2s but num2 has only a single 2
+tripleDouble(12345, 12345) == 0
+tripleDouble(666789, 12345667) == 1
+
+Problem 2:
+Given a binary array, find the maximum number of consecutive 1s in this array.
+Example 1:
+Input: [1,1,0,1,1,1]
+Output: 3
+Explanation: The first two digits or the last three digits are consecutive 1s.
+    The maximum number of consecutive 1s is 3.
+Note:
+The input array will only contain 0 and 1.
+The length of input array is a positive integer and will not exceed 10,000
