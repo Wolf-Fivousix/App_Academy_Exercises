@@ -170,3 +170,32 @@ Explanation: The first two digits or the last three digits are consecutive 1s.
 Note:
 The input array will only contain 0 and 1.
 The length of input array is a positive integer and will not exceed 10,000
+
+
+=============================================== W10D3
+(Warmup) Remove Duplicates from a Sorted Array 
+
+Given an array, write a function that removes duplicates. 
+
+Input: [1, 1, 2, 2, 2, 3]
+Output: [1, 2, 3]
+
+------------------------------------------------------------------
+(1) Remove Duplicates from a Sorted Array (In-place)
+
+Given an array, write a function that removes duplicates **in place**. Do **NOT** create another array. You must modify the existing array. So for the following input:
+
+array = [1, 1, 2, 2, 2]
+
+your function should modify array such that the first two elements are 1 and 2, respectively. 
+
+--------------------------------------------------------------------
+(2) Reverse Only Letters
+
+Given a string, write a function that reverses **only letters**, keeping everything else in the same order. 
+
+Input: "ab-cd"
+Output: "dc-ba"
+
+Input: "123ab4c"
+Output: "123cb4a"
