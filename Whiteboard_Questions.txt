@@ -223,3 +223,25 @@ Output: [3,4]
 Example 2:
 Input: nums = [5,7,7,8,8,10], target = 6
 Output: [-1,-1]
+
+
+=============================================== W11D5
+Problem 1:
+Implement a square root function that uses only addition, subtraction, multiplication and division in less than linear time. You may assume that input is always a perfect square.
+Hint: One naive solution has a better time complexity than many people realize--iterating from 0 until the square root is going to be O(sqrt n), not O(n). However, we can do better!
+Problem 1:
+Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+Example 1:
+Input:
+11110
+11010
+11000
+00000
+Output: 1
+Example 2:
+Input:
+11000
+11000
+00100
+00011
+Output: 3
