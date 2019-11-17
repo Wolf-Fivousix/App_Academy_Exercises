@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../../models/User");
+const bcrypt = require("bcryptjs");
 
 router.get("/test", (request, response) => {
     response.json({ message: "This is the user route." });
@@ -19,9 +20,20 @@ router.post("/register", (request, response) => {
                     password: request.body.password
                 });
 
-                newUser.save()
-                    .then(user => response.send(user))
-                    .catch(error => response.send(error));
+                // Insecure way of doing it.
+                // newUser.save()
+                //     .then(user => response.send(user))
+                //     .catch(error => response.send(error));
+
+                bcrypt.genSalt(10, (error, salt) => {
+                    bcrypt.hash(newUser.password, salt, (error, hashedPassword) => {
+                        if (error) throw error;
+                        newUser.password = hashedPassword;
+                        newUser.save()
+                            .then(user => response.json(user))
+                            .catch(error => console.log(error));
+                    });
+                });
             }
         });
 });
