@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const User = require("../../models/User");
 const bcrypt = require("bcryptjs");
+const keys = require("../../config/keys");
+const jwt = require("jsonwebtoken");
 
 router.get("/test", (request, response) => {
     response.json({ message: "This is the user route." });
@@ -50,7 +52,25 @@ router.post("/login", (request, response) => {
 
             bcrypt.compare(password, user.password)
                 .then(isMatch => {
-                    if(isMatch) return response.json({ message: "Success" });
+                    if(isMatch) {
+                        const payload = {
+                            id: user.id,
+                            handle: user.handle,
+                            email: user.email
+                        }
+                        jwt.sign(
+                            payload,
+                            keys.secretOrKey,
+                            { expiresIn: 3600 },
+                            (error, token) => {
+                                response.json({
+                                    success: true,
+                                    token: "Bearer " + token
+                                });
+                            }
+                        );
+                        return response.json({ message: "Success" });
+                    } 
                     return response.status(400).json({ password: "Invalid credentials" })
                 });
         });
