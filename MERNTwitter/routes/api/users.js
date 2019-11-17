@@ -38,4 +38,22 @@ router.post("/register", (request, response) => {
         });
 });
 
+router.post("/login", (request, response) => {
+    const email = request.body.email;
+    const password = request.body.password;
+
+    User.findOne({ email })
+        .then(user => {
+            if(!user) {
+                return response.status(404).json({ email: "Invalid credentials" });
+            }
+
+            bcrypt.compare(password, user.password)
+                .then(isMatch => {
+                    if(isMatch) return response.json({ message: "Success" });
+                    return response.status(400).json({ password: "Invalid credentials" })
+                });
+        });
+});
+
 module.exports = router;
