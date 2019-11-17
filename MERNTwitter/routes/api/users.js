@@ -4,12 +4,20 @@ const User = require("../../models/User");
 const bcrypt = require("bcryptjs");
 const keys = require("../../config/keys");
 const jwt = require("jsonwebtoken");
+const validateRegisterInput = require("../../validation/register");
+const validateLoginInput = require("../../validation/login");
 
 router.get("/test", (request, response) => {
     response.json({ message: "This is the user route." });
 });
 
 router.post("/register", (request, response) => {
+    const { errors, isValid } = validateRegisterInput(request.body);
+    
+    if(!isValid) {
+        return response.status(400).json(errros);
+    }
+
     User.findOne({ email: request.body.email })
         .then(user => {
             if (user) {
@@ -41,6 +49,12 @@ router.post("/register", (request, response) => {
 });
 
 router.post("/login", (request, response) => {
+    const { errors, isValid } = validateLoginInput(request.body);
+
+    if (!isValid) {
+        return response.status(400).json(errors);
+    }
+
     const email = request.body.email;
     const password = request.body.password;
 
